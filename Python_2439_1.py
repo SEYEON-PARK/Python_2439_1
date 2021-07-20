@@ -12,9 +12,9 @@ num=N # num에 N 대입
 m=1 # m을 1로 초기화
 
 for i in range(N): # i에 0부터 N-1까지 대입하며 반복
-    for j in range(num-m): # j에 num-m-1까지 대입하며 반복
+    for j in range(num-m): # j에 0부터 num-m-1까지 대입하며 반복
         print(" ", end="") # 띄어쓰기 출력하기
-    for k in range(m): 
-        print("*", end="")
-    m+=1;
-    print()
+    for k in range(m): # k에 0부터 m-1까지 대입하며 반복
+        print("*", end="") # * 출력하기
+    m+=1; # m에 m+1 대입하기
+    print() # 한 줄 띄기
