@@ -11,10 +11,10 @@ N=int(input()) # 사용자로부터 정수 입력받기
 num=N # num에 N 대입
 m=1 # m을 1로 초기화
 
-for i in range(N):
-    for j in range(num-m):
-        print(" ", end="")
-    for k in range(m):
+for i in range(N): # i에 0부터 N-1까지 대입하며 반복
+    for j in range(num-m): # j에 num-m-1까지 대입하며 반복
+        print(" ", end="") # 띄어쓰기 출력하기
+    for k in range(m): 
         print("*", end="")
     m+=1;
     print()
